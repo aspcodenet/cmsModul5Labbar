@@ -11,7 +11,8 @@ namespace CmsModul5Labbar.LinqLamda
         string[] bands = { "ACDC", "Queen", "Aerosmith", "Iron Maiden", "Megadeth",
 "Metallica", "Pearl Jam", "Oasis", "Abba", "Blur", "Eurythmics", "Genesis",
 "INXS", "Midnight Oil", "Kent", "Madness", "Manic Street Preachers", "The Offspring", "Pink Floyd", "Rammstein", "Red Hot Chili Peppers", "Deep Purple",
-"U2"};
+"U2"};
+
 
 
         void Lab2a()
@@ -38,7 +39,7 @@ namespace CmsModul5Labbar.LinqLamda
         }
         void Lab2e()
         {
-            var result = bands.OrderBy(band => band);
+            var result = bands.OrderBy(band => band.Length);
             foreach (var s in result)
                 Console.WriteLine(s);
         }
